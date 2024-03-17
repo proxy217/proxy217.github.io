@@ -16,132 +16,284 @@
   iframe.src = urlToInject;
 }*/
 
+function openAg(url) {
+  agU = Ultraviolet.codec.xor.encode(url);
+  localStorage.setItem('agUrl', agU);
+  location.href = '/lessons';
+}
+
+window.navigator.serviceWorker.register("/sw.js", {
+  scope: __uv$config.prefix,
+});
 
 /*apps*/
-function chatGPT() {
-  agU = Ultraviolet.codec.xor.encode('https://chat.shuttle.rip');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+function gpt() {
+  openAg('https://ub7.org');
 }
+
+function gemini() {
+  openAg('https://gemini.google.com');
+}
+
 function chess() {
-  agU = Ultraviolet.codec.xor.encode('https://chess.com');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://chess.com');
 }
+
 function discord() {
-  agU = Ultraviolet.codec.xor.encode('https://discord.com');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://discord.com');
 }
+
 function github() {
-  agU = Ultraviolet.codec.xor.encode('https://github.com');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://github.com');
 }
+
+function google() {
+  openAg('https://google.com');
+}
+
 function ng() {
-  agU = Ultraviolet.codec.xor.encode('https://now.gg/play/roblox-corporation/5349/roblox');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://nowgg.me');
 }
+
 function pin() {
-  agU = Ultraviolet.codec.xor.encode('https://pinterest.com');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://pinterest.com');
 }
+
 function reddit() {
-  agU = Ultraviolet.codec.xor.encode('https://reddit.com');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://reddit.com');
 }
+
 function spotify() {
-  agU = Ultraviolet.codec.xor.encode('https://spotify.com');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://spotify.com');
 }
+
 function tt() {
-  agU = Ultraviolet.codec.xor.encode('https://tiktok.com');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://tiktok.com');
 }
+
+function twitter() {
+  openAg('https://twitter.com');
+}
+
+function twitch() {
+  openAg('https://twitch.tv');
+}
+
 function yt() {
-  agU = Ultraviolet.codec.xor.encode('https://youtube.com');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://youtube.com');
 }
+
 function y8() {
-  agU = Ultraviolet.codec.xor.encode('https://y8.com');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://y8.com');
+}
+
+function vscode() {
+  openAg('https://vscode.dev');
+}
+
+function sFlix() {
+  openAg('https://sflix.se');
+}
+
+function netflix() {
+  openAg('https://netflix.com');
+}
+
+function symbolab() {
+  openAg('https://www.symbolab.com');
 }
 
 /*games*/
 function onevone() {
-  agU = Ultraviolet.codec.xor.encode('https://1v1.lol');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://1v1.lol');
 }
+
+function basketBros() {
+  openAg('https://derpman.codeberg.page/echo/@main/basketbros-io/');
+}
+
+function bitlife() {
+  openAg('https://derpman.codeberg.page/echo/@main/bitlife/index.html');
+}
+
 function brebound() {
-  agU = Ultraviolet.codec.xor.encode('https://trinculo54.github.io/Boxel-rebound-hope/Newer/index.html');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://trinculo54.github.io/Boxel-rebound-hope/Newer/index.html');
 }
+
 function cmg() {
-  agU = Ultraviolet.codec.xor.encode('https://coolmathgames.com');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://coolmathgames.com');
 }
+
 function crazygms() {
-  agU = Ultraviolet.codec.xor.encode('https://crazygames.com');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://crazygames.com');
 }
+
 function geforce() {
-  agU = Ultraviolet.codec.xor.encode('https://play.geforcenow.com');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://play.geforcenow.com');
 }
+
 function holeio() {
-  agU = Ultraviolet.codec.xor.encode('https://hole-io.com');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://hole-io.com');
 }
+
 function jstris() {
-  agU = Ultraviolet.codec.xor.encode('https://jstris.jezevec10.com/');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://jstris.jezevec10.com/');
 }
+
+function twoZeroFourEight() {
+  openAg('https://derpmandev.github.io/unblocked-games/2048');
+}
+
 function p2048() {
-  agU = Ultraviolet.codec.xor.encode('https://filipekiss.github.io/2048');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://filipekiss.github.io/2048');
 }
+
 function rbx() {
-  agU = Ultraviolet.codec.xor.encode('https://nowgg.nl/play/roblox-corporation/5349/roblox');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://now.gg/iframe/snippet?app_pkg=com.roblox.client&partner=gamenora');
 }
+
 function slope() {
-  agU = Ultraviolet.codec.xor.encode('https://derpmandev.github.io/unblocked-games/slope');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://derpmandev.github.io/unblocked-games/slope');
 }
+
 function subway() {
-  agU = Ultraviolet.codec.xor.encode('https://raw.githack.com/3kh0/3kh0-assets/main/subway-surfers/index.html');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://derpman.codeberg.page/echo/@main/subway-surfers/index.html');
 }
+
+function territorial() {
+  openAg('https://territorial.io');
+}
+
 function florr() {
-  agU = Ultraviolet.codec.xor.encode('https://florr.io');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://florr.io');
 }
+
 function cookieClicker() {
-  agU = Ultraviolet.codec.xor.encode('https://orteil.dashnet.org/cookieclicker');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
+  openAg('https://orteil.dashnet.org/cookieclicker');
 }
+
 function rBowl() {
-  agU = Ultraviolet.codec.xor.encode('https://retro-bowl.net/main.html');
-  sessionStorage.setItem('agUrl', agU);
-  location.href = '/lessons';
-}z
+  document.title = 'Doge | V4';
+  var cloakcheckScript = document.createElement("script");
+  cloakcheckScript.src = "/assets/js/cloak.js";
+  document.head.appendChild(cloakcheckScript);
+
+  var functionsScript = document.createElement("script");
+  functionsScript.src = "/assets/js/functions.js";
+  document.head.appendChild(functionsScript);
+
+  document.body.innerHTML = `
+  <script src="/assets/js/index.js"></script>
+  <script src="/uv/uv.bundle.js"></script>
+  <script src="/uv/uv.bundle.js"></script>
+  <script src="/uv/uv.config.js"></script>
+  <script src="/assets/js/ag.js"></script>
+  <script>
+    window.navigator.serviceWorker
+      .register("/sw.js", {
+        scope: __uv$config.prefix,
+      });
+  </script>
+  <iframe src="/assets/rb/index.html" style="position: fixed; inset: 0px; outline: none; border: none; height: 100%; width: 100%; overflow: hidden;"></iframe>
+`;
+
+  function getRandomThreeDigitNumber() {
+      return Math.floor(Math.random() * 900) + 100;
+  }
+
+  function getRandomAlphanumericString(length) {
+      const characters = 'abcdefghijklmnopqrstuvw0123456789012345';
+      let result = '';
+      for (let i = 0; i < length; i++) {
+          result += characters.charAt(Math.floor(Math.random() * characters.length));
+      }
+      return result;
+  }
+
+  var randomAlphanumericString = getRandomAlphanumericString(15);
+
+  var url = '/temp?draft=' + randomAlphanumericString;
+  var title = 'Google Docs';
+
+  history.pushState({}, title, url);
+}
+
+function krunker() {
+  openAg('https://krunker.io');
+}
+
+function paperIo() {
+  openAg('https://paper-io.com');
+}
+
+function run3() {
+  openAg('https://bonbang.github.io/store99/run-3');
+}
+
+function eaglerCraft18() {
+  openAg('https://derpmandev.github.io/unblocked-games/eaglercraft-1-8');
+}
+
+function eaglerCraft15() {
+  openAg('https://derpmandev.github.io/unblocked-games/eaglercraft-1-5');
+}
+
+function monkeyMart() {
+  openAg('https://www.getgames.io/games/gm/MonkeyMart/index.html');
+}
+
+function idleBreakout() {
+  openAg('https://html-classic.itch.zone/html/9150519/index.html');
+}
+
+function motoX3M() {
+  openAg('https://www.coolmathgames.com/0-moto-x3m/play');
+}
+
+function basketRandom() {
+  openAg('https://files.twoplayergames.org/files/games/other/Basket_Random/index.html');
+}
+
+function suikaWatermelon() {
+  openAg('https://watermelongame.com');
+}
+
+function timeShooter3() {
+  openAg('https://www.twoplayergames.org/embed/time-shooter-2');
+}
+
+function thereIsNoGame() {
+  openAg('https://23azostore.github.io/s/there-is-no-game/');
+}
+
+function ovo() {
+  openAg('https://ovo.onrender.com/versions/1.4.4b/index.html');
+}
+
+function awesomeTanksTwo() {
+  openAg('https://just-fall.github.io/j4/awesome-tanks-2/');
+}
+
+function templeRun() {
+  openAg('https://burgerbounty.github.io/s8/temple-run-2/');
+}
+
+function driveMad() {
+  openAg('https://drivemad.me/iframe/index.html');
+}
+
+function stickManHook() {
+  openAg('https://stickman-hook.io/iframe/index.html');
+}
+
+function kickTheBuddy() {
+  openAg('https://html5.gamedistribution.com/rvvASMiM/09399bfcb6e8462b873a6154b506ea99/index.html?gdpr-targeting=1&gd_sdk_referrer_url=https%3A%2F%2Fwww.silvergames.com%2Fen%2Fsuper-buddy-kick&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3d3dy5zaWx2ZXJnYW1lcy5jb20vZW4vc3VwZXItYnVkZHkta2ljayIsInBhcmVudERvbWFpbiI6InNpbHZlcmdhbWVzLmNvbSIsInRvcERvbWFpbiI6InNpbHZlcmdhbWVzLmNvbSIsImhhc0ltcHJlc3Npb24iOmZhbHNlLCJsb2FkZXJFbmFibGVkIjp0cnVlLCJob3N0IjoiaHRtbDUuZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJ2ZXJzaW9uIjoiMS41LjE3In0%253D')
+}
+
+function driftHunters() {
+  openAg('https://webglmath.github.io/drift-hunters/index.html');
+}
+
+function fBwG1() {
+  openAg('https://ubg100.github.io/games/fbwg1/index.html');
+}
